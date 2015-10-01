@@ -1,0 +1,5 @@
+packages/
+Alloy.AndAsync/bin/
+Alloy.AndAsync/obj/
+*.log
+*.suo
