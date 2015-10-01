@@ -28,5 +28,16 @@ namespace Alloy.AndAsync.Controllers
                 return await client.GetStringAsync("http://google.com");
             }
         }
+
+        public async Task<ActionResult> AsyncAction(TestArticlePage currentPage)
+        {
+            var result = new TestArticlePageViewModel(currentPage)
+            {
+                SomeExternalData = await GetExternalData(),
+                SiteStartPageId = SiteDefinition.Current.IfNotNull(x => x.StartPage.ID)
+            };
+
+            return PartialView(result);
+        }
     }
 }

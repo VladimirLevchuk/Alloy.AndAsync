@@ -443,6 +443,7 @@
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\EPiServer.Cms.Shell.UI.zip" />
     <Content Include="Views\TestArticlePage\Index.cshtml" />
+    <Content Include="Views\TestArticlePage\AsyncAction.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
