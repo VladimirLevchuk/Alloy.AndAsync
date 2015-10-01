@@ -19,23 +19,64 @@ Configure environment
 
 Steps to Reproduce
 -----------------------
-1. Create page type
-2. Create view model
-3. Create view 
-4. Create partial view
-5. Create controller
-6. Copy Rename "Start" page to "Start.com", copy it and rename a copy root to "Start.no"
-7. Configure .com site
-8. Configure .no site
-9. Check sites configuration
-10. Create test pages
-11. Open /local-async-issue/
-12. Open /global-async-issue/
+1) Create page type Alloy.AndAsync.Models.Pages.TestArticlePage
+
+![page type](/screenshots/01. Page Type.png)
+
+2) Create view model Alloy.AndAsync.Models.ViewModels.TestArticlePageViewModel
+
+![view model](/screenshots/02. View Model.png)
+
+3) Create view ~/Views/TestArticlePage/Index
+
+![view](/screenshots/03. Page View.png)
+
+4) Create partial view ~/Views/TestArticlePage/AsyncAction
+
+![partial view](/screenshots/04. Partial View.png)
+
+5) Create controller
+
+![](/screenshots/05. Controller.png) 
+
+6) Copy Rename "Start" page to "Start.com", copy it and rename a copy root to "Start.no"
+
+![](/screenshots/06. Start.com, Start.no.png) 
+
+7) Configure .com site
+
+![](/screenshots/07. .com site.png) 
+
+8) Configure .no site
+
+![](/screenshots/08. .no site.png) 
+
+9) Check sites configuration
+
+![](/screenshots/09. sites configuration.png) 
+
+10) Create test pages
+
+![](/screenshots/10. test pages created.png) 
+
+11) Open /local-async-issue/
+
+![](/screenshots/11. local-async-issue.png)  
+
+12) Open /global-async-issue/
+
+![](/screenshots/12. global-async-issue.png) 
+
+
+Expected Result
+-------------------
+SiteDefinition.Current is pointing to a "alloy-and-async.com" site
+
 
 Actual Result
 ----------------
 SiteDefinition.Current is SiteDefinition.Empty inside async action
 
-Expected Result
--------------------
-SiteDefinition.Current is pointing to a "alloy-and-async.com" site
+
+![](/screenshots/13. bug.png)  
+
