@@ -1,0 +1,14 @@
+@using EPiServer.Core
+@using Microsoft.Ajax.Utilities
+@model TestArticlePageViewModel
+
+@{ Layout = null; }
+
+<h2>
+    <br />
+    External Data Length: @Model.SomeExternalData.IfNotNull(x => x.Length)
+    <br/>
+    Site Start Page ID: @ContentReference.StartPage.ID (id from controller: @Model.SiteStartPageId)
+    <br/>
+</h2>
+
