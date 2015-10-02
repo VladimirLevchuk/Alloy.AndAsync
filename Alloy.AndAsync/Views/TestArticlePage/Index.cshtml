@@ -15,6 +15,8 @@
     <br/>
 </h2>
 
+@Html.Action("Action")
+
 <p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescription)>@Model.CurrentPage.MetaDescription</p>
 <div class="row">
     <div class="span8 clearfix" @Html.EditAttributes(x => x.CurrentPage.MainBody)>

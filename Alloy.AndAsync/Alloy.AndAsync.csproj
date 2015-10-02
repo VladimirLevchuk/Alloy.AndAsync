@@ -421,7 +421,7 @@
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="module.config" />
     <Content Include="Views\TestArticlePage\Index.cshtml" />
-    <Content Include="Views\TestArticlePage\AsyncAction.cshtml" />
+    <Content Include="Views\TestArticlePage\Action.cshtml" />
     <Content Include="modules\_protected\Shell\web.config" />
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
