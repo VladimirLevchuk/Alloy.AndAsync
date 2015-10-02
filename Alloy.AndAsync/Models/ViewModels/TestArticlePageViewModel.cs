@@ -10,5 +10,7 @@ namespace Alloy.AndAsync.Models.ViewModels
         public string SomeExternalData { get; set; }
 
         public int SiteStartPageId { get; set; }
+
+        public string PageName { get; set; }
     }
 }

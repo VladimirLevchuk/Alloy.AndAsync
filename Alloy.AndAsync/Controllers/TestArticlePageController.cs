@@ -18,6 +18,7 @@ namespace Alloy.AndAsync.Controllers
             {
                 SomeExternalData = await GetExternalDataAsync(),
                 SiteStartPageId = SiteDefinition.Current.IfNotNull(x => x.StartPage.ID),
+                PageName = ServiceLocator.Current.GetInstance<PageRouteHelper>().Page.Name
             };
 
             return View(result);

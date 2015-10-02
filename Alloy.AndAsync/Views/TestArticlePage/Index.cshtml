@@ -5,7 +5,9 @@
 
 @{ Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; }
 
-<h1 @Html.EditAttributes(x => x.CurrentPage.PageName)>@Model.CurrentPage.PageName</h1>
+<h1 @Html.EditAttributes(x => x.CurrentPage.PageName)> Page:
+    @Model.PageName
+</h1>
 
 <h2>
     <br/>
